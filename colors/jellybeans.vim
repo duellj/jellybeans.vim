@@ -320,8 +320,8 @@ if version >= 700
   call s:X("TabLineSel","000000","f0f0f0","italic,bold",s:termBlack,"White")
 
   " Auto-completion
-  call s:X("Pmenu","ffffff","606060","","White",s:termBlack)
-  call s:X("PmenuSel","101010","eeeeee","",s:termBlack,"White")
+  call s:X("Pmenu","eeeeee","4e4e8f","","eeeeee",s:termBlack)
+  call s:X("PmenuSel","eeeeee","2e2e3f","",s:termBlack,"White")
 endif
 
 call s:X("Visual","","404040","","",s:termBlack)
@@ -352,7 +352,7 @@ call s:X("StringDelimiter","556633","","","DarkGreen","")
 
 call s:X("Identifier","c6b6ee","","","LightCyan","")
 call s:X("Structure","8fbfdc","","","LightCyan","")
-call s:X("Function","fad07a","","","Yellow","")
+call s:X("Function","facf7a","","","Yellow","")
 call s:X("Statement","8197bf","","","DarkBlue","")
 call s:X("PreProc","8fbfdc","","","LightBlue","")
 
@@ -394,6 +394,7 @@ call s:X("DiffText","8fbfdc","000000","reverse","Yellow","")
 " PHP
 
 hi! link phpFunctions Function
+hi! link phpRegion Function
 call s:X("StorageClass","c59f6f","","","Red","")
 hi! link phpSuperglobal Identifier
 hi! link phpQuoteSingle StringDelimiter
